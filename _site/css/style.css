@@ -1,0 +1,2076 @@
+input[type="submit"] {
+  font-size: 1.1em;
+  border: 1px solid #00bcd4;
+  border-radius: 4px;
+  text-transform: none; }
+
+.signup-wrapper {
+  margin: 4em 0; }
+
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
+ * -----Typography
+ * -----Colors
+ * -----Textfield
+ * -----Switch
+ * -----Spinner
+ * -----Radio
+ * -----Menu
+ * -----List
+ * -----Layout
+ * -----Icon toggles
+ * -----Footer
+ * -----Column
+ * -----Checkbox
+ * -----Card
+ * -----Button
+ * -----Animation
+ * -----Progress
+ * -----Badge
+ * -----Shadows
+ * -----Grid
+ * -----Data table
+ * -----Dialog
+ * -----Snackbar
+ *
+ * Even though all variables have the `!default` directive, most of them
+ * should not be changed as they are dependent one another. This can cause
+ * visual distortions (like alignment issues) that are hard to track down
+ * and fix.
+ */
+/* ==========  TYPOGRAPHY  ========== */
+/* We're splitting fonts into "preferred" and "performance" in order to optimize
+   page loading. For important text, such as the body, we want it to load
+   immediately and not wait for the web font load, whereas for other sections,
+   such as headers and titles, we're OK with things taking a bit longer to load.
+   We do have some optional classes and parameters in the mixins, in case you
+   definitely want to make sure you're using the preferred font and don't mind
+   the performance hit.
+   We should be able to improve on this once CSS Font Loading L3 becomes more
+   widely available.
+*/
+/* ==========  COLORS  ========== */
+/**
+*
+* Material design color palettes.
+* @see http://www.google.com/design/spec/style/color.html
+*
+**/
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* ==========  Color Palettes  ========== */
+/* colors.scss */
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * If passed a color, behaves just like the built-in `rgba`.
+ * Otherwise, generates an `rgba` literal.
+ *
+ * This is used for generating invalid CSS with placeholders for colors that can
+ * then be customized into valid CSS without using Sass.
+ */
+/* ==========  IMAGES  ========== */
+/* ==========  Color & Themes  ========== */
+/* ==========  Typography  ========== */
+/* ==========  Components  ========== */
+/* ==========  Standard Buttons  ========== */
+/* ==========  Icon Toggles  ========== */
+/* ==========  Radio Buttons  ========== */
+/* ==========  Ripple effect  ========== */
+/* ==========  Layout  ========== */
+/* ==========  Content Tabs  ========== */
+/* ==========  Checkboxes  ========== */
+/* ==========  Switches  ========== */
+/* ==========  Spinner  ========== */
+/* ==========  Text fields  ========== */
+/* ==========  Card  ========== */
+/* ==========  Sliders ========== */
+/* ========== Progress ========== */
+/* ==========  List ========== */
+/* ==========  Item ========== */
+/* ==========  Dropdown menu ========== */
+/* ==========  Tooltips  ========== */
+/* ==========  Footer  ========== */
+/* TEXTFIELD */
+/* SWITCH */
+/* SPINNER */
+/* RADIO */
+/* MENU */
+/* LIST */
+/* LAYOUT */
+/* ICON TOGGLE */
+/* FOOTER */
+/*mega-footer*/
+/*mini-footer*/
+/* CHECKBOX */
+/* CARD */
+/* Card dimensions */
+/* Cover image */
+/* BUTTON */
+/**
+ *
+ * Dimensions
+ *
+ */
+/* ANIMATION */
+/* PROGRESS */
+/* BADGE */
+/* SHADOWS */
+/* GRID */
+/* DATA TABLE */
+/* DIALOG */
+/* SNACKBAR */
+/* TOOLTIP */
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* Typography */
+/* Shadows */
+/* Animations */
+/* Dialog */
+.mdl-textfield {
+  position: relative;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 300px;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px 0; }
+  .mdl-textfield .mdl-button {
+    position: absolute;
+    bottom: 20px; }
+
+.mdl-textfield--align-right {
+  text-align: right; }
+
+.mdl-textfield--full-width {
+  width: 100%; }
+
+.mdl-textfield--expandable {
+  min-width: 32px;
+  width: auto;
+  min-height: 32px; }
+
+.mdl-textfield__input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  display: block;
+  font-size: 16px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  padding: 4px 0;
+  width: 100%;
+  background: none;
+  text-align: left;
+  color: inherit; }
+  .mdl-textfield__input[type="number"] {
+    -moz-appearance: textfield; }
+  .mdl-textfield__input[type="number"]::-webkit-inner-spin-button, .mdl-textfield__input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .mdl-textfield.is-focused .mdl-textfield__input {
+    outline: none; }
+  .mdl-textfield.is-invalid .mdl-textfield__input {
+    border-color: #d50000;
+    box-shadow: none; }
+  fieldset[disabled] .mdl-textfield .mdl-textfield__input, .mdl-textfield.is-disabled .mdl-textfield__input {
+    background-color: transparent;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.26); }
+
+.mdl-textfield textarea.mdl-textfield__input {
+  display: block; }
+
+.mdl-textfield__label {
+  bottom: 0;
+  color: rgba(0, 0, 0, 0.26);
+  font-size: 16px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  top: 24px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left; }
+  .mdl-textfield.is-dirty .mdl-textfield__label, .mdl-textfield.has-placeholder .mdl-textfield__label {
+    visibility: hidden; }
+  .mdl-textfield--floating-label .mdl-textfield__label {
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+  .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+    transition: none; }
+  fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disabled.is-disabled .mdl-textfield__label {
+    color: rgba(0, 0, 0, 0.26); }
+  .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+    color: #3f51b5;
+    font-size: 12px;
+    top: 4px;
+    visibility: visible; }
+  .mdl-textfield--floating-label.is-focused .mdl-textfield__expandable-holder .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__expandable-holder .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__expandable-holder .mdl-textfield__label {
+    top: -16px; }
+  .mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
+    color: #d50000;
+    font-size: 12px; }
+  .mdl-textfield__label:after {
+    background-color: #3f51b5;
+    bottom: 20px;
+    content: '';
+    height: 2px;
+    left: 45%;
+    position: absolute;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
+    width: 10px; }
+  .mdl-textfield.is-focused .mdl-textfield__label:after {
+    left: 0;
+    visibility: visible;
+    width: 100%; }
+  .mdl-textfield.is-invalid .mdl-textfield__label:after {
+    background-color: #d50000; }
+
+.mdl-textfield__error {
+  color: #d50000;
+  position: absolute;
+  font-size: 12px;
+  margin-top: 3px;
+  visibility: hidden;
+  display: block; }
+  .mdl-textfield.is-invalid .mdl-textfield__error {
+    visibility: visible; }
+
+.mdl-textfield__expandable-holder {
+  display: inline-block;
+  position: relative;
+  margin-left: 32px;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  max-width: 0.1px; }
+  .mdl-textfield.is-focused .mdl-textfield__expandable-holder, .mdl-textfield.is-dirty .mdl-textfield__expandable-holder {
+    max-width: 600px; }
+  .mdl-textfield__expandable-holder .mdl-textfield__label:after {
+    bottom: 0; }
+
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*
+* NOTE: Some rules here are applied using duplicate selectors.
+* This is on purpose to increase their specificity when applied.
+* For example: `.mdl-cell--1-col-phone.mdl-cell--1-col-phone`
+*/
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
+ * -----Typography
+ * -----Colors
+ * -----Textfield
+ * -----Switch
+ * -----Spinner
+ * -----Radio
+ * -----Menu
+ * -----List
+ * -----Layout
+ * -----Icon toggles
+ * -----Footer
+ * -----Column
+ * -----Checkbox
+ * -----Card
+ * -----Button
+ * -----Animation
+ * -----Progress
+ * -----Badge
+ * -----Shadows
+ * -----Grid
+ * -----Data table
+ * -----Dialog
+ * -----Snackbar
+ *
+ * Even though all variables have the `!default` directive, most of them
+ * should not be changed as they are dependent one another. This can cause
+ * visual distortions (like alignment issues) that are hard to track down
+ * and fix.
+ */
+/* ==========  TYPOGRAPHY  ========== */
+/* We're splitting fonts into "preferred" and "performance" in order to optimize
+   page loading. For important text, such as the body, we want it to load
+   immediately and not wait for the web font load, whereas for other sections,
+   such as headers and titles, we're OK with things taking a bit longer to load.
+   We do have some optional classes and parameters in the mixins, in case you
+   definitely want to make sure you're using the preferred font and don't mind
+   the performance hit.
+   We should be able to improve on this once CSS Font Loading L3 becomes more
+   widely available.
+*/
+/* ==========  COLORS  ========== */
+/**
+*
+* Material design color palettes.
+* @see http://www.google.com/design/spec/style/color.html
+*
+**/
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* ==========  Color Palettes  ========== */
+/* colors.scss */
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * If passed a color, behaves just like the built-in `rgba`.
+ * Otherwise, generates an `rgba` literal.
+ *
+ * This is used for generating invalid CSS with placeholders for colors that can
+ * then be customized into valid CSS without using Sass.
+ */
+/* ==========  IMAGES  ========== */
+/* ==========  Color & Themes  ========== */
+/* ==========  Typography  ========== */
+/* ==========  Components  ========== */
+/* ==========  Standard Buttons  ========== */
+/* ==========  Icon Toggles  ========== */
+/* ==========  Radio Buttons  ========== */
+/* ==========  Ripple effect  ========== */
+/* ==========  Layout  ========== */
+/* ==========  Content Tabs  ========== */
+/* ==========  Checkboxes  ========== */
+/* ==========  Switches  ========== */
+/* ==========  Spinner  ========== */
+/* ==========  Text fields  ========== */
+/* ==========  Card  ========== */
+/* ==========  Sliders ========== */
+/* ========== Progress ========== */
+/* ==========  List ========== */
+/* ==========  Item ========== */
+/* ==========  Dropdown menu ========== */
+/* ==========  Tooltips  ========== */
+/* ==========  Footer  ========== */
+/* TEXTFIELD */
+/* SWITCH */
+/* SPINNER */
+/* RADIO */
+/* MENU */
+/* LIST */
+/* LAYOUT */
+/* ICON TOGGLE */
+/* FOOTER */
+/*mega-footer*/
+/*mini-footer*/
+/* CHECKBOX */
+/* CARD */
+/* Card dimensions */
+/* Cover image */
+/* BUTTON */
+/**
+ *
+ * Dimensions
+ *
+ */
+/* ANIMATION */
+/* PROGRESS */
+/* BADGE */
+/* SHADOWS */
+/* GRID */
+/* DATA TABLE */
+/* DIALOG */
+/* SNACKBAR */
+/* TOOLTIP */
+.mdl-grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto 0 auto;
+  align-items: stretch; }
+  .mdl-grid.mdl-grid--no-spacing {
+    padding: 0; }
+
+.mdl-cell {
+  box-sizing: border-box; }
+
+.mdl-cell--top {
+  align-self: flex-start; }
+
+.mdl-cell--middle {
+  align-self: center; }
+
+.mdl-cell--bottom {
+  align-self: flex-end; }
+
+.mdl-cell--stretch {
+  align-self: stretch; }
+
+.mdl-grid.mdl-grid--no-spacing > .mdl-cell {
+  margin: 0; }
+
+.mdl-cell--order-1 {
+  order: 1; }
+
+.mdl-cell--order-2 {
+  order: 2; }
+
+.mdl-cell--order-3 {
+  order: 3; }
+
+.mdl-cell--order-4 {
+  order: 4; }
+
+.mdl-cell--order-5 {
+  order: 5; }
+
+.mdl-cell--order-6 {
+  order: 6; }
+
+.mdl-cell--order-7 {
+  order: 7; }
+
+.mdl-cell--order-8 {
+  order: 8; }
+
+.mdl-cell--order-9 {
+  order: 9; }
+
+.mdl-cell--order-10 {
+  order: 10; }
+
+.mdl-cell--order-11 {
+  order: 11; }
+
+.mdl-cell--order-12 {
+  order: 12; }
+
+@media (max-width: 479px) {
+  .mdl-grid {
+    padding: 8px; }
+
+  .mdl-cell {
+    margin: 8px;
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell {
+      width: 100%; }
+
+  .mdl-cell--hide-phone {
+    display: none !important; }
+
+  .mdl-cell--order-1-phone.mdl-cell--order-1-phone {
+    order: 1; }
+
+  .mdl-cell--order-2-phone.mdl-cell--order-2-phone {
+    order: 2; }
+
+  .mdl-cell--order-3-phone.mdl-cell--order-3-phone {
+    order: 3; }
+
+  .mdl-cell--order-4-phone.mdl-cell--order-4-phone {
+    order: 4; }
+
+  .mdl-cell--order-5-phone.mdl-cell--order-5-phone {
+    order: 5; }
+
+  .mdl-cell--order-6-phone.mdl-cell--order-6-phone {
+    order: 6; }
+
+  .mdl-cell--order-7-phone.mdl-cell--order-7-phone {
+    order: 7; }
+
+  .mdl-cell--order-8-phone.mdl-cell--order-8-phone {
+    order: 8; }
+
+  .mdl-cell--order-9-phone.mdl-cell--order-9-phone {
+    order: 9; }
+
+  .mdl-cell--order-10-phone.mdl-cell--order-10-phone {
+    order: 10; }
+
+  .mdl-cell--order-11-phone.mdl-cell--order-11-phone {
+    order: 11; }
+
+  .mdl-cell--order-12-phone.mdl-cell--order-12-phone {
+    order: 12; }
+
+  .mdl-cell--1-col,
+  .mdl-cell--1-col-phone.mdl-cell--1-col-phone {
+    width: calc(25% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--1-col, .mdl-grid--no-spacing >
+    .mdl-cell--1-col-phone.mdl-cell--1-col-phone {
+      width: 25%; }
+
+  .mdl-cell--2-col,
+  .mdl-cell--2-col-phone.mdl-cell--2-col-phone {
+    width: calc(50% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--2-col, .mdl-grid--no-spacing >
+    .mdl-cell--2-col-phone.mdl-cell--2-col-phone {
+      width: 50%; }
+
+  .mdl-cell--3-col,
+  .mdl-cell--3-col-phone.mdl-cell--3-col-phone {
+    width: calc(75% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--3-col, .mdl-grid--no-spacing >
+    .mdl-cell--3-col-phone.mdl-cell--3-col-phone {
+      width: 75%; }
+
+  .mdl-cell--4-col,
+  .mdl-cell--4-col-phone.mdl-cell--4-col-phone {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--4-col, .mdl-grid--no-spacing >
+    .mdl-cell--4-col-phone.mdl-cell--4-col-phone {
+      width: 100%; }
+
+  .mdl-cell--5-col,
+  .mdl-cell--5-col-phone.mdl-cell--5-col-phone {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--5-col, .mdl-grid--no-spacing >
+    .mdl-cell--5-col-phone.mdl-cell--5-col-phone {
+      width: 100%; }
+
+  .mdl-cell--6-col,
+  .mdl-cell--6-col-phone.mdl-cell--6-col-phone {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--6-col, .mdl-grid--no-spacing >
+    .mdl-cell--6-col-phone.mdl-cell--6-col-phone {
+      width: 100%; }
+
+  .mdl-cell--7-col,
+  .mdl-cell--7-col-phone.mdl-cell--7-col-phone {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--7-col, .mdl-grid--no-spacing >
+    .mdl-cell--7-col-phone.mdl-cell--7-col-phone {
+      width: 100%; }
+
+  .mdl-cell--8-col,
+  .mdl-cell--8-col-phone.mdl-cell--8-col-phone {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--8-col, .mdl-grid--no-spacing >
+    .mdl-cell--8-col-phone.mdl-cell--8-col-phone {
+      width: 100%; }
+
+  .mdl-cell--9-col,
+  .mdl-cell--9-col-phone.mdl-cell--9-col-phone {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--9-col, .mdl-grid--no-spacing >
+    .mdl-cell--9-col-phone.mdl-cell--9-col-phone {
+      width: 100%; }
+
+  .mdl-cell--10-col,
+  .mdl-cell--10-col-phone.mdl-cell--10-col-phone {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--10-col, .mdl-grid--no-spacing >
+    .mdl-cell--10-col-phone.mdl-cell--10-col-phone {
+      width: 100%; }
+
+  .mdl-cell--11-col,
+  .mdl-cell--11-col-phone.mdl-cell--11-col-phone {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--11-col, .mdl-grid--no-spacing >
+    .mdl-cell--11-col-phone.mdl-cell--11-col-phone {
+      width: 100%; }
+
+  .mdl-cell--12-col,
+  .mdl-cell--12-col-phone.mdl-cell--12-col-phone {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--12-col, .mdl-grid--no-spacing >
+    .mdl-cell--12-col-phone.mdl-cell--12-col-phone {
+      width: 100%; }
+
+  .mdl-cell--1-offset,
+  .mdl-cell--1-offset-phone.mdl-cell--1-offset-phone {
+    margin-left: calc(25% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--1-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--1-offset-phone.mdl-cell--1-offset-phone {
+      margin-left: 25%; }
+
+  .mdl-cell--2-offset,
+  .mdl-cell--2-offset-phone.mdl-cell--2-offset-phone {
+    margin-left: calc(50% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--2-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--2-offset-phone.mdl-cell--2-offset-phone {
+      margin-left: 50%; }
+
+  .mdl-cell--3-offset,
+  .mdl-cell--3-offset-phone.mdl-cell--3-offset-phone {
+    margin-left: calc(75% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--3-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--3-offset-phone.mdl-cell--3-offset-phone {
+      margin-left: 75%; } }
+@media (min-width: 480px) and (max-width: 839px) {
+  .mdl-grid {
+    padding: 8px; }
+
+  .mdl-cell {
+    margin: 8px;
+    width: calc(50% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell {
+      width: 50%; }
+
+  .mdl-cell--hide-tablet {
+    display: none !important; }
+
+  .mdl-cell--order-1-tablet.mdl-cell--order-1-tablet {
+    order: 1; }
+
+  .mdl-cell--order-2-tablet.mdl-cell--order-2-tablet {
+    order: 2; }
+
+  .mdl-cell--order-3-tablet.mdl-cell--order-3-tablet {
+    order: 3; }
+
+  .mdl-cell--order-4-tablet.mdl-cell--order-4-tablet {
+    order: 4; }
+
+  .mdl-cell--order-5-tablet.mdl-cell--order-5-tablet {
+    order: 5; }
+
+  .mdl-cell--order-6-tablet.mdl-cell--order-6-tablet {
+    order: 6; }
+
+  .mdl-cell--order-7-tablet.mdl-cell--order-7-tablet {
+    order: 7; }
+
+  .mdl-cell--order-8-tablet.mdl-cell--order-8-tablet {
+    order: 8; }
+
+  .mdl-cell--order-9-tablet.mdl-cell--order-9-tablet {
+    order: 9; }
+
+  .mdl-cell--order-10-tablet.mdl-cell--order-10-tablet {
+    order: 10; }
+
+  .mdl-cell--order-11-tablet.mdl-cell--order-11-tablet {
+    order: 11; }
+
+  .mdl-cell--order-12-tablet.mdl-cell--order-12-tablet {
+    order: 12; }
+
+  .mdl-cell--1-col,
+  .mdl-cell--1-col-tablet.mdl-cell--1-col-tablet {
+    width: calc(12.5% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--1-col, .mdl-grid--no-spacing >
+    .mdl-cell--1-col-tablet.mdl-cell--1-col-tablet {
+      width: 12.5%; }
+
+  .mdl-cell--2-col,
+  .mdl-cell--2-col-tablet.mdl-cell--2-col-tablet {
+    width: calc(25% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--2-col, .mdl-grid--no-spacing >
+    .mdl-cell--2-col-tablet.mdl-cell--2-col-tablet {
+      width: 25%; }
+
+  .mdl-cell--3-col,
+  .mdl-cell--3-col-tablet.mdl-cell--3-col-tablet {
+    width: calc(37.5% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--3-col, .mdl-grid--no-spacing >
+    .mdl-cell--3-col-tablet.mdl-cell--3-col-tablet {
+      width: 37.5%; }
+
+  .mdl-cell--4-col,
+  .mdl-cell--4-col-tablet.mdl-cell--4-col-tablet {
+    width: calc(50% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--4-col, .mdl-grid--no-spacing >
+    .mdl-cell--4-col-tablet.mdl-cell--4-col-tablet {
+      width: 50%; }
+
+  .mdl-cell--5-col,
+  .mdl-cell--5-col-tablet.mdl-cell--5-col-tablet {
+    width: calc(62.5% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--5-col, .mdl-grid--no-spacing >
+    .mdl-cell--5-col-tablet.mdl-cell--5-col-tablet {
+      width: 62.5%; }
+
+  .mdl-cell--6-col,
+  .mdl-cell--6-col-tablet.mdl-cell--6-col-tablet {
+    width: calc(75% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--6-col, .mdl-grid--no-spacing >
+    .mdl-cell--6-col-tablet.mdl-cell--6-col-tablet {
+      width: 75%; }
+
+  .mdl-cell--7-col,
+  .mdl-cell--7-col-tablet.mdl-cell--7-col-tablet {
+    width: calc(87.5% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--7-col, .mdl-grid--no-spacing >
+    .mdl-cell--7-col-tablet.mdl-cell--7-col-tablet {
+      width: 87.5%; }
+
+  .mdl-cell--8-col,
+  .mdl-cell--8-col-tablet.mdl-cell--8-col-tablet {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--8-col, .mdl-grid--no-spacing >
+    .mdl-cell--8-col-tablet.mdl-cell--8-col-tablet {
+      width: 100%; }
+
+  .mdl-cell--9-col,
+  .mdl-cell--9-col-tablet.mdl-cell--9-col-tablet {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--9-col, .mdl-grid--no-spacing >
+    .mdl-cell--9-col-tablet.mdl-cell--9-col-tablet {
+      width: 100%; }
+
+  .mdl-cell--10-col,
+  .mdl-cell--10-col-tablet.mdl-cell--10-col-tablet {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--10-col, .mdl-grid--no-spacing >
+    .mdl-cell--10-col-tablet.mdl-cell--10-col-tablet {
+      width: 100%; }
+
+  .mdl-cell--11-col,
+  .mdl-cell--11-col-tablet.mdl-cell--11-col-tablet {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--11-col, .mdl-grid--no-spacing >
+    .mdl-cell--11-col-tablet.mdl-cell--11-col-tablet {
+      width: 100%; }
+
+  .mdl-cell--12-col,
+  .mdl-cell--12-col-tablet.mdl-cell--12-col-tablet {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--12-col, .mdl-grid--no-spacing >
+    .mdl-cell--12-col-tablet.mdl-cell--12-col-tablet {
+      width: 100%; }
+
+  .mdl-cell--1-offset,
+  .mdl-cell--1-offset-tablet.mdl-cell--1-offset-tablet {
+    margin-left: calc(12.5% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--1-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--1-offset-tablet.mdl-cell--1-offset-tablet {
+      margin-left: 12.5%; }
+
+  .mdl-cell--2-offset,
+  .mdl-cell--2-offset-tablet.mdl-cell--2-offset-tablet {
+    margin-left: calc(25% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--2-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--2-offset-tablet.mdl-cell--2-offset-tablet {
+      margin-left: 25%; }
+
+  .mdl-cell--3-offset,
+  .mdl-cell--3-offset-tablet.mdl-cell--3-offset-tablet {
+    margin-left: calc(37.5% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--3-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--3-offset-tablet.mdl-cell--3-offset-tablet {
+      margin-left: 37.5%; }
+
+  .mdl-cell--4-offset,
+  .mdl-cell--4-offset-tablet.mdl-cell--4-offset-tablet {
+    margin-left: calc(50% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--4-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--4-offset-tablet.mdl-cell--4-offset-tablet {
+      margin-left: 50%; }
+
+  .mdl-cell--5-offset,
+  .mdl-cell--5-offset-tablet.mdl-cell--5-offset-tablet {
+    margin-left: calc(62.5% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--5-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--5-offset-tablet.mdl-cell--5-offset-tablet {
+      margin-left: 62.5%; }
+
+  .mdl-cell--6-offset,
+  .mdl-cell--6-offset-tablet.mdl-cell--6-offset-tablet {
+    margin-left: calc(75% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--6-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--6-offset-tablet.mdl-cell--6-offset-tablet {
+      margin-left: 75%; }
+
+  .mdl-cell--7-offset,
+  .mdl-cell--7-offset-tablet.mdl-cell--7-offset-tablet {
+    margin-left: calc(87.5% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--7-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--7-offset-tablet.mdl-cell--7-offset-tablet {
+      margin-left: 87.5%; } }
+@media (min-width: 840px) {
+  .mdl-grid {
+    padding: 8px; }
+
+  .mdl-cell {
+    margin: 8px;
+    width: calc(33.33333% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell {
+      width: 33.33333%; }
+
+  .mdl-cell--hide-desktop {
+    display: none !important; }
+
+  .mdl-cell--order-1-desktop.mdl-cell--order-1-desktop {
+    order: 1; }
+
+  .mdl-cell--order-2-desktop.mdl-cell--order-2-desktop {
+    order: 2; }
+
+  .mdl-cell--order-3-desktop.mdl-cell--order-3-desktop {
+    order: 3; }
+
+  .mdl-cell--order-4-desktop.mdl-cell--order-4-desktop {
+    order: 4; }
+
+  .mdl-cell--order-5-desktop.mdl-cell--order-5-desktop {
+    order: 5; }
+
+  .mdl-cell--order-6-desktop.mdl-cell--order-6-desktop {
+    order: 6; }
+
+  .mdl-cell--order-7-desktop.mdl-cell--order-7-desktop {
+    order: 7; }
+
+  .mdl-cell--order-8-desktop.mdl-cell--order-8-desktop {
+    order: 8; }
+
+  .mdl-cell--order-9-desktop.mdl-cell--order-9-desktop {
+    order: 9; }
+
+  .mdl-cell--order-10-desktop.mdl-cell--order-10-desktop {
+    order: 10; }
+
+  .mdl-cell--order-11-desktop.mdl-cell--order-11-desktop {
+    order: 11; }
+
+  .mdl-cell--order-12-desktop.mdl-cell--order-12-desktop {
+    order: 12; }
+
+  .mdl-cell--1-col,
+  .mdl-cell--1-col-desktop.mdl-cell--1-col-desktop {
+    width: calc(8.33333% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--1-col, .mdl-grid--no-spacing >
+    .mdl-cell--1-col-desktop.mdl-cell--1-col-desktop {
+      width: 8.33333%; }
+
+  .mdl-cell--2-col,
+  .mdl-cell--2-col-desktop.mdl-cell--2-col-desktop {
+    width: calc(16.66667% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--2-col, .mdl-grid--no-spacing >
+    .mdl-cell--2-col-desktop.mdl-cell--2-col-desktop {
+      width: 16.66667%; }
+
+  .mdl-cell--3-col,
+  .mdl-cell--3-col-desktop.mdl-cell--3-col-desktop {
+    width: calc(25% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--3-col, .mdl-grid--no-spacing >
+    .mdl-cell--3-col-desktop.mdl-cell--3-col-desktop {
+      width: 25%; }
+
+  .mdl-cell--4-col,
+  .mdl-cell--4-col-desktop.mdl-cell--4-col-desktop {
+    width: calc(33.33333% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--4-col, .mdl-grid--no-spacing >
+    .mdl-cell--4-col-desktop.mdl-cell--4-col-desktop {
+      width: 33.33333%; }
+
+  .mdl-cell--5-col,
+  .mdl-cell--5-col-desktop.mdl-cell--5-col-desktop {
+    width: calc(41.66667% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--5-col, .mdl-grid--no-spacing >
+    .mdl-cell--5-col-desktop.mdl-cell--5-col-desktop {
+      width: 41.66667%; }
+
+  .mdl-cell--6-col,
+  .mdl-cell--6-col-desktop.mdl-cell--6-col-desktop {
+    width: calc(50% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--6-col, .mdl-grid--no-spacing >
+    .mdl-cell--6-col-desktop.mdl-cell--6-col-desktop {
+      width: 50%; }
+
+  .mdl-cell--7-col,
+  .mdl-cell--7-col-desktop.mdl-cell--7-col-desktop {
+    width: calc(58.33333% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--7-col, .mdl-grid--no-spacing >
+    .mdl-cell--7-col-desktop.mdl-cell--7-col-desktop {
+      width: 58.33333%; }
+
+  .mdl-cell--8-col,
+  .mdl-cell--8-col-desktop.mdl-cell--8-col-desktop {
+    width: calc(66.66667% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--8-col, .mdl-grid--no-spacing >
+    .mdl-cell--8-col-desktop.mdl-cell--8-col-desktop {
+      width: 66.66667%; }
+
+  .mdl-cell--9-col,
+  .mdl-cell--9-col-desktop.mdl-cell--9-col-desktop {
+    width: calc(75% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--9-col, .mdl-grid--no-spacing >
+    .mdl-cell--9-col-desktop.mdl-cell--9-col-desktop {
+      width: 75%; }
+
+  .mdl-cell--10-col,
+  .mdl-cell--10-col-desktop.mdl-cell--10-col-desktop {
+    width: calc(83.33333% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--10-col, .mdl-grid--no-spacing >
+    .mdl-cell--10-col-desktop.mdl-cell--10-col-desktop {
+      width: 83.33333%; }
+
+  .mdl-cell--11-col,
+  .mdl-cell--11-col-desktop.mdl-cell--11-col-desktop {
+    width: calc(91.66667% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--11-col, .mdl-grid--no-spacing >
+    .mdl-cell--11-col-desktop.mdl-cell--11-col-desktop {
+      width: 91.66667%; }
+
+  .mdl-cell--12-col,
+  .mdl-cell--12-col-desktop.mdl-cell--12-col-desktop {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--12-col, .mdl-grid--no-spacing >
+    .mdl-cell--12-col-desktop.mdl-cell--12-col-desktop {
+      width: 100%; }
+
+  .mdl-cell--1-offset,
+  .mdl-cell--1-offset-desktop.mdl-cell--1-offset-desktop {
+    margin-left: calc(8.33333% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--1-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--1-offset-desktop.mdl-cell--1-offset-desktop {
+      margin-left: 8.33333%; }
+
+  .mdl-cell--2-offset,
+  .mdl-cell--2-offset-desktop.mdl-cell--2-offset-desktop {
+    margin-left: calc(16.66667% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--2-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--2-offset-desktop.mdl-cell--2-offset-desktop {
+      margin-left: 16.66667%; }
+
+  .mdl-cell--3-offset,
+  .mdl-cell--3-offset-desktop.mdl-cell--3-offset-desktop {
+    margin-left: calc(25% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--3-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--3-offset-desktop.mdl-cell--3-offset-desktop {
+      margin-left: 25%; }
+
+  .mdl-cell--4-offset,
+  .mdl-cell--4-offset-desktop.mdl-cell--4-offset-desktop {
+    margin-left: calc(33.33333% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--4-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--4-offset-desktop.mdl-cell--4-offset-desktop {
+      margin-left: 33.33333%; }
+
+  .mdl-cell--5-offset,
+  .mdl-cell--5-offset-desktop.mdl-cell--5-offset-desktop {
+    margin-left: calc(41.66667% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--5-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--5-offset-desktop.mdl-cell--5-offset-desktop {
+      margin-left: 41.66667%; }
+
+  .mdl-cell--6-offset,
+  .mdl-cell--6-offset-desktop.mdl-cell--6-offset-desktop {
+    margin-left: calc(50% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--6-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--6-offset-desktop.mdl-cell--6-offset-desktop {
+      margin-left: 50%; }
+
+  .mdl-cell--7-offset,
+  .mdl-cell--7-offset-desktop.mdl-cell--7-offset-desktop {
+    margin-left: calc(58.33333% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--7-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--7-offset-desktop.mdl-cell--7-offset-desktop {
+      margin-left: 58.33333%; }
+
+  .mdl-cell--8-offset,
+  .mdl-cell--8-offset-desktop.mdl-cell--8-offset-desktop {
+    margin-left: calc(66.66667% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--8-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--8-offset-desktop.mdl-cell--8-offset-desktop {
+      margin-left: 66.66667%; }
+
+  .mdl-cell--9-offset,
+  .mdl-cell--9-offset-desktop.mdl-cell--9-offset-desktop {
+    margin-left: calc(75% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--9-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--9-offset-desktop.mdl-cell--9-offset-desktop {
+      margin-left: 75%; }
+
+  .mdl-cell--10-offset,
+  .mdl-cell--10-offset-desktop.mdl-cell--10-offset-desktop {
+    margin-left: calc(83.33333% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--10-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--10-offset-desktop.mdl-cell--10-offset-desktop {
+      margin-left: 83.33333%; }
+
+  .mdl-cell--11-offset,
+  .mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop {
+    margin-left: calc(91.66667% + 8px); }
+    .mdl-grid.mdl-grid--no-spacing > .mdl-cell--11-offset, .mdl-grid.mdl-grid--no-spacing >
+    .mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop {
+      margin-left: 91.66667%; } }
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * STYLE GUIDE VARIABLES------------------Declarations of Sass variables
+ * -----Typography
+ * -----Colors
+ * -----Textfield
+ * -----Switch
+ * -----Spinner
+ * -----Radio
+ * -----Menu
+ * -----List
+ * -----Layout
+ * -----Icon toggles
+ * -----Footer
+ * -----Column
+ * -----Checkbox
+ * -----Card
+ * -----Button
+ * -----Animation
+ * -----Progress
+ * -----Badge
+ * -----Shadows
+ * -----Grid
+ * -----Data table
+ * -----Dialog
+ * -----Snackbar
+ *
+ * Even though all variables have the `!default` directive, most of them
+ * should not be changed as they are dependent one another. This can cause
+ * visual distortions (like alignment issues) that are hard to track down
+ * and fix.
+ */
+/* ==========  TYPOGRAPHY  ========== */
+/* We're splitting fonts into "preferred" and "performance" in order to optimize
+   page loading. For important text, such as the body, we want it to load
+   immediately and not wait for the web font load, whereas for other sections,
+   such as headers and titles, we're OK with things taking a bit longer to load.
+   We do have some optional classes and parameters in the mixins, in case you
+   definitely want to make sure you're using the preferred font and don't mind
+   the performance hit.
+   We should be able to improve on this once CSS Font Loading L3 becomes more
+   widely available.
+*/
+/* ==========  COLORS  ========== */
+/**
+*
+* Material design color palettes.
+* @see http://www.google.com/design/spec/style/color.html
+*
+**/
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* ==========  Color Palettes  ========== */
+/* colors.scss */
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * If passed a color, behaves just like the built-in `rgba`.
+ * Otherwise, generates an `rgba` literal.
+ *
+ * This is used for generating invalid CSS with placeholders for colors that can
+ * then be customized into valid CSS without using Sass.
+ */
+/* ==========  IMAGES  ========== */
+/* ==========  Color & Themes  ========== */
+/* ==========  Typography  ========== */
+/* ==========  Components  ========== */
+/* ==========  Standard Buttons  ========== */
+/* ==========  Icon Toggles  ========== */
+/* ==========  Radio Buttons  ========== */
+/* ==========  Ripple effect  ========== */
+/* ==========  Layout  ========== */
+/* ==========  Content Tabs  ========== */
+/* ==========  Checkboxes  ========== */
+/* ==========  Switches  ========== */
+/* ==========  Spinner  ========== */
+/* ==========  Text fields  ========== */
+/* ==========  Card  ========== */
+/* ==========  Sliders ========== */
+/* ========== Progress ========== */
+/* ==========  List ========== */
+/* ==========  Item ========== */
+/* ==========  Dropdown menu ========== */
+/* ==========  Tooltips  ========== */
+/* ==========  Footer  ========== */
+/* TEXTFIELD */
+/* SWITCH */
+/* SPINNER */
+/* RADIO */
+/* MENU */
+/* LIST */
+/* LAYOUT */
+/* ICON TOGGLE */
+/* FOOTER */
+/*mega-footer*/
+/*mini-footer*/
+/* CHECKBOX */
+/* CARD */
+/* Card dimensions */
+/* Cover image */
+/* BUTTON */
+/**
+ *
+ * Dimensions
+ *
+ */
+/* ANIMATION */
+/* PROGRESS */
+/* BADGE */
+/* SHADOWS */
+/* GRID */
+/* DATA TABLE */
+/* DIALOG */
+/* SNACKBAR */
+/* TOOLTIP */
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* Typography */
+/* Shadows */
+/* Animations */
+/* Dialog */
+.mdl-button {
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  color: black;
+  position: relative;
+  height: 36px;
+  margin: 0;
+  min-width: 64px;
+  padding: 0 16px;
+  display: inline-block;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0;
+  overflow: hidden;
+  will-change: box-shadow;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle; }
+  .mdl-button::-moz-focus-inner {
+    border: 0; }
+  .mdl-button:hover {
+    background-color: rgba(158, 158, 158, 0.2); }
+  .mdl-button:focus:not(:active) {
+    background-color: rgba(0, 0, 0, 0.12); }
+  .mdl-button:active {
+    background-color: rgba(158, 158, 158, 0.4); }
+  .mdl-button.mdl-button--colored {
+    color: #3f51b5; }
+    .mdl-button.mdl-button--colored:focus:not(:active) {
+      background-color: rgba(0, 0, 0, 0.12); }
+
+input.mdl-button[type="submit"] {
+  -webkit-appearance: none; }
+
+.mdl-button--raised {
+  background: rgba(158, 158, 158, 0.2);
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); }
+  .mdl-button--raised:active {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    background-color: rgba(158, 158, 158, 0.4); }
+  .mdl-button--raised:focus:not(:active) {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+    background-color: rgba(158, 158, 158, 0.4); }
+  .mdl-button--raised.mdl-button--colored {
+    background: #3f51b5;
+    color: white; }
+    .mdl-button--raised.mdl-button--colored:hover {
+      background-color: #3f51b5; }
+    .mdl-button--raised.mdl-button--colored:active {
+      background-color: #3f51b5; }
+    .mdl-button--raised.mdl-button--colored:focus:not(:active) {
+      background-color: #3f51b5; }
+    .mdl-button--raised.mdl-button--colored .mdl-ripple {
+      background: white; }
+
+.mdl-button--fab {
+  border-radius: 50%;
+  font-size: 24px;
+  height: 56px;
+  margin: auto;
+  min-width: 56px;
+  width: 56px;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(158, 158, 158, 0.2);
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  position: relative;
+  line-height: normal; }
+  .mdl-button--fab .material-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12px, -12px);
+    line-height: 24px;
+    width: 24px; }
+  .mdl-button--fab.mdl-button--mini-fab {
+    height: 40px;
+    min-width: 40px;
+    width: 40px; }
+  .mdl-button--fab .mdl-button__ripple-container {
+    border-radius: 50%;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
+  .mdl-button--fab:active {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    background-color: rgba(158, 158, 158, 0.4); }
+  .mdl-button--fab:focus:not(:active) {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+    background-color: rgba(158, 158, 158, 0.4); }
+  .mdl-button--fab.mdl-button--colored {
+    background: #ff4081;
+    color: white; }
+    .mdl-button--fab.mdl-button--colored:hover {
+      background-color: #ff4081; }
+    .mdl-button--fab.mdl-button--colored:focus:not(:active) {
+      background-color: #ff4081; }
+    .mdl-button--fab.mdl-button--colored:active {
+      background-color: #ff4081; }
+    .mdl-button--fab.mdl-button--colored .mdl-ripple {
+      background: white; }
+
+.mdl-button--icon {
+  border-radius: 50%;
+  font-size: 24px;
+  height: 32px;
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 32px;
+  width: 32px;
+  padding: 0;
+  overflow: hidden;
+  color: inherit;
+  line-height: normal; }
+  .mdl-button--icon .material-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12px, -12px);
+    line-height: 24px;
+    width: 24px; }
+  .mdl-button--icon.mdl-button--mini-icon {
+    height: 24px;
+    min-width: 24px;
+    width: 24px; }
+    .mdl-button--icon.mdl-button--mini-icon .material-icons {
+      top: 0px;
+      left: 0px; }
+  .mdl-button--icon .mdl-button__ripple-container {
+    border-radius: 50%;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
+
+.mdl-button__ripple-container {
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden; }
+  .mdl-button[disabled] .mdl-button__ripple-container .mdl-ripple, .mdl-button.mdl-button--disabled .mdl-button__ripple-container .mdl-ripple {
+    background-color: transparent; }
+
+.mdl-button--primary.mdl-button--primary {
+  color: #3f51b5; }
+  .mdl-button--primary.mdl-button--primary .mdl-ripple {
+    background: white; }
+  .mdl-button--primary.mdl-button--primary.mdl-button--raised, .mdl-button--primary.mdl-button--primary.mdl-button--fab {
+    color: white;
+    background-color: #3f51b5; }
+
+.mdl-button--accent.mdl-button--accent {
+  color: #ff4081; }
+  .mdl-button--accent.mdl-button--accent .mdl-ripple {
+    background: white; }
+  .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    color: white;
+    background-color: #ff4081; }
+
+.mdl-button[disabled][disabled], .mdl-button.mdl-button--disabled.mdl-button--disabled {
+  color: rgba(0, 0, 0, 0.26);
+  cursor: default;
+  background-color: transparent; }
+.mdl-button--fab[disabled][disabled], .mdl-button--fab.mdl-button--disabled.mdl-button--disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.26); }
+.mdl-button--raised[disabled][disabled], .mdl-button--raised.mdl-button--disabled.mdl-button--disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none; }
+.mdl-button--colored[disabled][disabled], .mdl-button--colored.mdl-button--disabled.mdl-button--disabled {
+  color: rgba(0, 0, 0, 0.26); }
+
+.mdl-button .material-icons {
+  vertical-align: middle; }
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Basic styling
+ */
+body {
+  font: 400 16px/1.5 "PT Sans", Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal; }
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+.highlight {
+  margin-bottom: 15px; }
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block; }
+
+figcaption {
+  font-size: 14px; }
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: 30px; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
+/**
+ * Links
+ */
+a {
+  color: #aaa !important;
+  text-decoration: none; }
+  a:visited {
+    color: #1756a9; }
+  a:hover {
+    color: black !important;
+    border-bottom: 1px dotted black; }
+  a.page-link:hover {
+    color: #111;
+    border-bottom: 1px dotted black; }
+  a.postLink {
+    color: black !important; }
+    a.postLink:hover {
+      border-bottom: 1px dotted black; }
+    a.postLink:visited {
+      color: "crimson" !important; }
+  a.post-title-link {
+    color: black !important; }
+    a.post-title-link:hover {
+      border-bottom: 1px dotted black !important; }
+    a.post-title-link:visited {
+      color: "crimson" !important; }
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: -webkit-calc(800px - (30px));
+      max-width: calc(800px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+/**
+ * Clearfix
+ */
+.wrapper:after, .footer-col-wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #828282; }
+
+.post {
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 0; }
+
+.download {
+  padding: 10px; }
+
+.authorKeyword {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  padding-top: 0.5em; }
+
+.writtenBy {
+  letter-spacing: 0;
+  text-indent: 0;
+  text-transform: uppercase; }
+
+.archive-intro {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-indent: 2px; }
+
+.archiveIntro {
+  text-align: center; }
+
+.hint {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-indent: 2px; }
+
+.example {
+  font-family: 'Menlo';
+  padding: 10px; }
+
+.manual {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-indent: 2px; }
+
+.postContent {
+  padding-top: 3.5em;
+  text-align: center; }
+
+.postDate {
+  float: left;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-indent: 2px; }
+
+.postTag {
+  float: right; }
+
+.postTitle {
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-indent: 3px; }
+
+/**
+ * Site header
+ */
+.site-header {
+  border-top: 5px solid #424242;
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 56px;
+  position: relative; }
+
+.site-logo {
+  margin-top: 6em; }
+
+.site-title {
+  font-size: 64px;
+  font-weight: 100;
+  font-family: 'PT Sans';
+  text-transform: capitalize;
+  font-weight: 500; }
+  .site-title, .site-title:visited {
+    color: #424242; }
+
+.site-description {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-indent: 6px;
+  font-family: 'Josefin Sans'; }
+
+.exclamationMark {
+  padding-left: 2em;
+  padding-right: 2em; }
+
+.site-navigation {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-indent: 6px;
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+  padding-top: 5em; }
+
+.page-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  font-family: "PT Sans";
+  font-size: 12px; }
+
+.page-tagline {
+  font-size: 18px;
+  font-family: "PT Sans";
+  color: #aaaaaa;
+  text-align: center;
+  text-transform: lowercase; }
+
+.page-link {
+  color: #aaaaaa; }
+
+.site-nav .page-link {
+  color: #111;
+  line-height: 1.5; }
+  .site-nav .page-link:not(:last-child) {
+    margin-right: 20px; }
+@media screen and (max-width: 600px) {
+  .site-nav {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    background-color: #fdfdfd;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-align: right; }
+    .site-nav .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center; }
+      .site-nav .menu-icon > svg {
+        width: 18px;
+        height: 15px; }
+        .site-nav .menu-icon > svg path {
+          fill: #424242; }
+    .site-nav .trigger {
+      clear: both;
+      display: none; }
+    .site-nav:hover .trigger {
+      display: block;
+      padding-bottom: 5px; }
+    .site-nav .page-link {
+      display: block;
+      padding: 5px 10px;
+      margin-left: 20px; }
+      .site-nav .page-link:not(:last-child) {
+        margin-right: 0; } }
+
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0; }
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: 15px; }
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0; }
+
+.small-site-title {
+  font-family: "PT Sans"; }
+
+.footer-col-wrapper {
+  font-size: 15px;
+  color: #828282;
+  margin-left: -15px; }
+
+.footer-content {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  letter-spacing: 1px; }
+
+.footer-col {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 15px; }
+
+.footer-col-1 {
+  width: -webkit-calc(35% - (30px / 2));
+  width: calc(35% - (30px / 2)); }
+
+.footer-col-2 {
+  width: -webkit-calc(20% - (30px / 2));
+  width: calc(20% - (30px / 2)); }
+
+.footer-col-3 {
+  width: -webkit-calc(45% - (30px / 2));
+  width: calc(45% - (30px / 2)); }
+
+@media screen and (max-width: 800px) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(50% - (30px / 2));
+    width: calc(50% - (30px / 2)); }
+
+  .footer-col-3 {
+    width: -webkit-calc(100% - (30px / 2));
+    width: calc(100% - (30px / 2)); } }
+@media screen and (max-width: 600px) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (30px / 2));
+    width: calc(100% - (30px / 2)); } }
+/**
+ * Page content
+ */
+.page-content {
+  padding: 0; }
+
+.page-heading {
+  font-size: 20px; }
+
+.post-list {
+  margin-left: 0;
+  list-style: none; }
+  .post-list > li {
+    margin-bottom: 30px; }
+
+.post-meta {
+  font-size: 14px;
+  color: #828282;
+  text-transform: uppercase;
+  font-size: 16px; }
+
+.post-link {
+  display: block;
+  font-size: 24px; }
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: 30px; }
+
+.post-title {
+  font-size: 62px;
+  text-align: center;
+  font-family: "PT Sans";
+  font-weight: 900; }
+  @media screen and (max-width: 800px) {
+    .post-title {
+      font-size: 36px; } }
+
+.post-content {
+  margin-bottom: 30px;
+  padding-bottom: 3em !important; }
+  .post-content p {
+    font-size: 1.5rem; }
+  .post-content h2 {
+    font-size: 32px; }
+    @media screen and (max-width: 800px) {
+      .post-content h2 {
+        font-size: 28px; } }
+  .post-content h3 {
+    font-size: 26px; }
+    @media screen and (max-width: 800px) {
+      .post-content h3 {
+        font-size: 22px; } }
+  .post-content h4 {
+    font-size: 20px; }
+    @media screen and (max-width: 800px) {
+      .post-content h4 {
+        font-size: 18px; } }
+
+/**
+ * Syntax highlighting styles
+ */
+.highlight {
+  background: #fff; }
+  .highlighter-rouge .highlight {
+    background: #eef; }
+  .highlight .c {
+    color: #998;
+    font-style: italic; }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2; }
+  .highlight .k {
+    font-weight: bold; }
+  .highlight .o {
+    font-weight: bold; }
+  .highlight .cm {
+    color: #998;
+    font-style: italic; }
+  .highlight .cp {
+    color: #999;
+    font-weight: bold; }
+  .highlight .c1 {
+    color: #998;
+    font-style: italic; }
+  .highlight .cs {
+    color: #999;
+    font-weight: bold;
+    font-style: italic; }
+  .highlight .gd {
+    color: #000;
+    background-color: #fdd; }
+  .highlight .gd .x {
+    color: #000;
+    background-color: #faa; }
+  .highlight .ge {
+    font-style: italic; }
+  .highlight .gr {
+    color: #a00; }
+  .highlight .gh {
+    color: #999; }
+  .highlight .gi {
+    color: #000;
+    background-color: #dfd; }
+  .highlight .gi .x {
+    color: #000;
+    background-color: #afa; }
+  .highlight .go {
+    color: #888; }
+  .highlight .gp {
+    color: #555; }
+  .highlight .gs {
+    font-weight: bold; }
+  .highlight .gu {
+    color: #aaa; }
+  .highlight .gt {
+    color: #a00; }
+  .highlight .kc {
+    font-weight: bold; }
+  .highlight .kd {
+    font-weight: bold; }
+  .highlight .kp {
+    font-weight: bold; }
+  .highlight .kr {
+    font-weight: bold; }
+  .highlight .kt {
+    color: #458;
+    font-weight: bold; }
+  .highlight .m {
+    color: #099; }
+  .highlight .s {
+    color: #d14; }
+  .highlight .na {
+    color: #008080; }
+  .highlight .nb {
+    color: #0086B3; }
+  .highlight .nc {
+    color: #458;
+    font-weight: bold; }
+  .highlight .no {
+    color: #008080; }
+  .highlight .ni {
+    color: #800080; }
+  .highlight .ne {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nf {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nn {
+    color: #555; }
+  .highlight .nt {
+    color: #000080; }
+  .highlight .nv {
+    color: #008080; }
+  .highlight .ow {
+    font-weight: bold; }
+  .highlight .w {
+    color: #bbb; }
+  .highlight .mf {
+    color: #099; }
+  .highlight .mh {
+    color: #099; }
+  .highlight .mi {
+    color: #099; }
+  .highlight .mo {
+    color: #099; }
+  .highlight .sb {
+    color: #d14; }
+  .highlight .sc {
+    color: #d14; }
+  .highlight .sd {
+    color: #d14; }
+  .highlight .s2 {
+    color: #d14; }
+  .highlight .se {
+    color: #d14; }
+  .highlight .sh {
+    color: #d14; }
+  .highlight .si {
+    color: #d14; }
+  .highlight .sx {
+    color: #d14; }
+  .highlight .sr {
+    color: #009926; }
+  .highlight .s1 {
+    color: #d14; }
+  .highlight .ss {
+    color: #990073; }
+  .highlight .bp {
+    color: #999; }
+  .highlight .vc {
+    color: #008080; }
+  .highlight .vg {
+    color: #008080; }
+  .highlight .vi {
+    color: #008080; }
+  .highlight .il {
+    color: #099; }
