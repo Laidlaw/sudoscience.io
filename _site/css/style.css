@@ -277,7 +277,7 @@ input[type="submit"] {
   fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disabled.is-disabled .mdl-textfield__label {
     color: rgba(0, 0, 0, 0.26); }
   .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
-    color: #3f51b5;
+    color: #00bcd4;
     font-size: 12px;
     top: 4px;
     visibility: visible; }
@@ -287,7 +287,7 @@ input[type="submit"] {
     color: #d50000;
     font-size: 12px; }
   .mdl-textfield__label:after {
-    background-color: #3f51b5;
+    background-color: #00bcd4;
     bottom: 20px;
     content: '';
     height: 2px;
@@ -1337,7 +1337,7 @@ input[type="submit"] {
   .mdl-button:active {
     background-color: rgba(158, 158, 158, 0.4); }
   .mdl-button.mdl-button--colored {
-    color: #3f51b5; }
+    color: #00bcd4; }
     .mdl-button.mdl-button--colored:focus:not(:active) {
       background-color: rgba(0, 0, 0, 0.12); }
 
@@ -1354,14 +1354,14 @@ input.mdl-button[type="submit"] {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
     background-color: rgba(158, 158, 158, 0.4); }
   .mdl-button--raised.mdl-button--colored {
-    background: #3f51b5;
+    background: #00bcd4;
     color: white; }
     .mdl-button--raised.mdl-button--colored:hover {
-      background-color: #3f51b5; }
+      background-color: #00bcd4; }
     .mdl-button--raised.mdl-button--colored:active {
-      background-color: #3f51b5; }
+      background-color: #00bcd4; }
     .mdl-button--raised.mdl-button--colored:focus:not(:active) {
-      background-color: #3f51b5; }
+      background-color: #00bcd4; }
     .mdl-button--raised.mdl-button--colored .mdl-ripple {
       background: white; }
 
@@ -1453,12 +1453,12 @@ input.mdl-button[type="submit"] {
     background-color: transparent; }
 
 .mdl-button--primary.mdl-button--primary {
-  color: #3f51b5; }
+  color: #00bcd4; }
   .mdl-button--primary.mdl-button--primary .mdl-ripple {
     background: white; }
   .mdl-button--primary.mdl-button--primary.mdl-button--raised, .mdl-button--primary.mdl-button--primary.mdl-button--fab {
     color: white;
-    background-color: #3f51b5; }
+    background-color: #00bcd4; }
 
 .mdl-button--accent.mdl-button--accent {
   color: #ff4081; }
