@@ -1,0 +1,6 @@
+
+<ul>
+{% for newsletter in site.data.resources.newsletters %}
+     <li><a href="{{ newsletter.location }}">{{ newsletter.title }}</a></li>
+{% endfor %}
+</ul>

@@ -16,3 +16,11 @@ github_username:  Laidlaw
 
 # Build settings
 markdown: kramdown
+
+include: [".htaccess"]
+exclude: ["_dev",
+            "gulpfile.js",
+            "node_modules",
+            "package.json",
+            "Gemfile",
+            "Gemfile.lock"]
